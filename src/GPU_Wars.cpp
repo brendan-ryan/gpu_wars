@@ -4,6 +4,14 @@
 #include <fstream>
 #include <stdlib.h>
 
+/*
+The function changeLocation() is printing a message to the player but it is getting swallowed up by the display
+function when it skips 100 blank lines.
+Need to pass the string to the display function
+*/
+
+
+
 // using namespace std;
 
 Wallet::Wallet() {
@@ -115,7 +123,7 @@ void Wallet::calculatePrices() {
     float min = 1.0;
     float max = 1.4;
     float delta = max - min;
-    srand(time(NULL));
+    srand(time(NULL));                                                                                  // seed pseudorandom number generator
     prices["RTX 3070"] = (int)499 * ((((float) rand() / (float) RAND_MAX) / max) + min);
     prices["RTX 3080"] = (int)699 * ((((float) rand() / (float) RAND_MAX) / max) + min);
     prices["RTX 3090"] = (int)999 * ((((float) rand() / (float) RAND_MAX) / max) + min);
@@ -142,6 +150,11 @@ int Wallet::randomEvent() {
     float event = rand() % 100;
     return event;
 }
+
+void randomEvent() {
+    
+}
+
 std::map<std::string, int> Wallet::getPrices() {
     return prices;
 }
@@ -173,7 +186,7 @@ void Wallet::changeLocation() {
     }
 
     int event = randomEvent();
-    // std::cout << "Random number: " << event << "\n";
+    std::cout << "Random number: " << event << "\n";
 
     switch (selection) {
         case 1:
