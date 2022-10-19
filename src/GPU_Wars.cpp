@@ -173,7 +173,7 @@ void Wallet::changeLocation() {
     }
 
     int event = randomEvent();
-    std::cout << "Random number: " << event << "\n";
+    // std::cout << "Random number: " << event << "\n";
 
     switch (selection) {
         case 1:
@@ -606,7 +606,7 @@ void printTitle() {
     }
     std::ifstream title_file;
     std::string line;
-    title_file.open("/Users/brendanryan/Documents/#Code/GPU Wars/title_1.txt"); // MacOS
+    title_file.open("../text/title_1.txt"); // MacOS
     // title_file.open(R"(D:\Code\GPU Wars\title_1.txt)"); // Windows
 
 
