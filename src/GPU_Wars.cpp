@@ -194,14 +194,14 @@ void Wallet::changeLocation() {
             if (event > 80) {
                 std::cout << "PRICES ARE THROUGH THE ROOF! CASH IN, IF YOU CAN\n";
                 std::cout << "PRESS ENTER TO CONTINUE\n";
-                std::cin.clear();
+                std::cin.ignore();
                 std::cin.get();
                 calculatePrices(2);
             }
             else if (event < 20) {
                 std::cout << "THE CRYPTO MARKET HAS TANKED AND MINERS A DUMPING CARDS\n";
                 std::cout << "PRESS ENTER TO CONTINUE\n";
-                std::cin.clear();
+                std::cin.ignore();
                 std::cin.get();
                 calculatePrices(0.5);
             }
@@ -214,14 +214,14 @@ void Wallet::changeLocation() {
             if (event > 80) {
                 std::cout << "PRICES ARE THROUGH THE ROOF! CASH IN, IF YOU CAN\n";
                 std::cout << "PRESS ENTER TO CONTINUE\n";
-                std::cin.clear();
+                std::cin.ignore();
                 std::cin.get();
                 calculatePrices(2);
             }
             else if (event < 20) {
                 std::cout << "THE CRYPTO MARKET HAS TANKED AND MINERS A DUMPING CARDS\n";
                 std::cout << "PRESS ENTER TO CONTINUE\n";
-                std::cin.clear();
+                std::cin.ignore();
                 std::cin.get();
                 calculatePrices(0.5);
             }
@@ -234,14 +234,14 @@ void Wallet::changeLocation() {
             if (event > 80) {
                 std::cout << "PRICES ARE THROUGH THE ROOF! CASH IN, IF YOU CAN\n";
                 std::cout << "PRESS ENTER TO CONTINUE\n";
-                std::cin.clear();
+                std::cin.ignore();
                 std::cin.get();
                 calculatePrices(2);
             }
             else if (event < 20) {
                 std::cout << "THE CRYPTO MARKET HAS TANKED AND MINERS A DUMPING CARDS\n";
                 std::cout << "PRESS ENTER TO CONTINUE\n";
-                std::cin.clear();
+                std::cin.ignore();
                 std::cin.get();
                 calculatePrices(0.5);
             }
@@ -254,14 +254,14 @@ void Wallet::changeLocation() {
             if (event > 80) {
                 std::cout << "PRICES ARE THROUGH THE ROOF! CASH IN, IF YOU CAN\n";
                 std::cout << "PRESS ENTER TO CONTINUE\n";
-                std::cin.clear();
+                std::cin.ignore();
                 std::cin.get();
                 calculatePrices(2);
             }
             else if (event < 20) {
                 std::cout << "THE CRYPTO MARKET HAS TANKED AND MINERS A DUMPING CARDS\n";
                 std::cout << "PRESS ENTER TO CONTINUE\n";
-                std::cin.clear();
+                std::cin.ignore();
                 std::cin.get();
                 calculatePrices(0.5);
             }
@@ -274,14 +274,14 @@ void Wallet::changeLocation() {
             if (event > 80) {
                 std::cout << "PRICES ARE THROUGH THE ROOF! CASH IN, IF YOU CAN\n";
                 std::cout << "PRESS ENTER TO CONTINUE\n";
-                std::cin.clear();
+                std::cin.ignore();
                 std::cin.get();
                 calculatePrices(2);
             }
             else if (event < 20) {
                 std::cout << "THE CRYPTO MARKET HAS TANKED AND MINERS A DUMPING CARDS\n";
                 std::cout << "PRESS ENTER TO CONTINUE\n";
-                std::cin.clear();
+                std::cin.ignore();
                 std::cin.get();
                 calculatePrices(0.5);
             }
@@ -294,14 +294,14 @@ void Wallet::changeLocation() {
             if (event > 80) {
                 std::cout << "PRICES ARE THROUGH THE ROOF! CASH IN, IF YOU CAN\n";
                 std::cout << "PRESS ENTER TO CONTINUE\n";
-                std::cin.clear();
+                std::cin.ignore();
                 std::cin.get();
                 calculatePrices(2);
             }
             else if (event < 20) {
                 std::cout << "THE CRYPTO MARKET HAS TANKED AND MINERS A DUMPING CARDS\n";
                 std::cout << "PRESS ENTER TO CONTINUE\n";
-                std::cin.clear();
+                std::cin.ignore();
                 std::cin.get();
                 calculatePrices(0.5);
             }
@@ -346,6 +346,9 @@ void Wallet::buy() {
         case 1:
             if (qty * prices["RTX 3070"] > cash) {
                 std::cout << "YOU DON'T HAVE ENOUGH CASH FOR THAT\n";
+                std::cout << "PRESS ENTER TO CONTINUE\n";
+                std::cin.ignore();
+                std::cin.get();
             }
             else {
                 set3070Qty(qty);
@@ -355,6 +358,9 @@ void Wallet::buy() {
         case 2:
             if (qty * prices["RTX 3080"] > cash) {
                 std::cout << "YOU DON'T HAVE ENOUGH CASH FOR THAT\n";
+                std::cout << "PRESS ENTER TO CONTINUE\n";
+                std::cin.ignore();
+                std::cin.get();
             }
             else {
                 set3080Qty(qty);
@@ -364,6 +370,9 @@ void Wallet::buy() {
         case 3:
             if (qty * prices["RTX 3090"] > cash) {
                 std::cout << "YOU DON'T HAVE ENOUGH CASH FOR THAT\n";
+                std::cout << "PRESS ENTER TO CONTINUE\n";
+                std::cin.ignore();
+                std::cin.get();
             }
             else {
                 set3090Qty(qty);
@@ -373,6 +382,9 @@ void Wallet::buy() {
         case 4:
             if (qty * prices["RX 6700 XT"] > cash) {
                 std::cout << "YOU DON'T HAVE ENOUGH CASH FOR THAT\n";
+                std::cout << "PRESS ENTER TO CONTINUE\n";
+                std::cin.ignore();
+                std::cin.get();
             }
             else {
                 set6700Qty(qty);
@@ -382,6 +394,9 @@ void Wallet::buy() {
         case 5:
             if (qty * prices["RX 6800 XT"] > cash) {
                 std::cout << "YOU DON'T HAVE ENOUGH CASH FOR THAT\n";
+                std::cout << "PRESS ENTER TO CONTINUE\n";
+                std::cin.ignore();
+                std::cin.get();
             }
             else {
                 set6800Qty(qty);
@@ -391,6 +406,9 @@ void Wallet::buy() {
         case 6:
             if (qty * prices["RX 6900 XT"] > cash) {
                 std::cout << "YOU DON'T HAVE ENOUGH CASH FOR THAT\n";
+                std::cout << "PRESS ENTER TO CONTINUE\n";
+                std::cin.ignore();
+                std::cin.get();
             }
             else {
                 set6900Qty(qty);
@@ -431,6 +449,9 @@ void Wallet::sell() {
         case 1:
             if (qty > get3070Qty()) {
                 std::cout << "YOU DON'T HAVE THAT MANY TO SELL\n";
+                std::cout << "PRESS ENTER TO CONTINUE\n";
+                std::cin.ignore();
+                std::cin.get();
             }
             else {
                 set3070Qty(-qty);
@@ -440,6 +461,9 @@ void Wallet::sell() {
         case 2:
             if (qty > get3080Qty()) {
                 std::cout << "YOU DON'T HAVE THAT MANY TO SELL\n";
+                std::cout << "PRESS ENTER TO CONTINUE\n";
+                std::cin.ignore();
+                std::cin.get();
             }
             else {
                 set3080Qty(-qty);
@@ -449,6 +473,9 @@ void Wallet::sell() {
         case 3:
             if (qty > get3090Qty()) {
                 std::cout << "YOU DON'T HAVE THAT MANY TO SELL\n";
+                std::cout << "PRESS ENTER TO CONTINUE\n";            // desperately need to refactor this away
+                std::cin.ignore();
+                std::cin.get();
             }
             else {
                 set3090Qty(-qty);
@@ -458,6 +485,9 @@ void Wallet::sell() {
         case 4:
             if (qty > get6700Qty()) {
                 std::cout << "YOU DON'T HAVE THAT MANY TO SELL\n";
+                std::cout << "PRESS ENTER TO CONTINUE\n";
+                std::cin.ignore();
+                std::cin.get();
             }
             else {
                 set6700Qty(-qty);
@@ -467,6 +497,9 @@ void Wallet::sell() {
         case 5:
             if (qty > get6800Qty()) {
                 std::cout << "YOU DON'T HAVE THAT MANY TO SELL\n";
+                std::cout << "PRESS ENTER TO CONTINUE\n";
+                std::cin.ignore();
+                std::cin.get();
             }
             else {
                 set6800Qty(-qty);
@@ -476,6 +509,9 @@ void Wallet::sell() {
         case 6:
             if (qty > get6900Qty()) {
                 std::cout << "YOU DON'T HAVE THAT MANY TO SELL\n";
+                std::cout << "PRESS ENTER TO CONTINUE\n";
+                std::cin.ignore();
+                std::cin.get();
             }
             else {
                 set6900Qty(-qty);
@@ -590,7 +626,8 @@ void display(Wallet &wallet) {
     }
     // create local instance for printing --- this may be a bad idea
     std::map<std::string, int> prices = wallet.getPrices();
-    std::cout << "*************************************************************************************************\n";
+
+    std::cout << "************************************************************************************************\n";
     std::cout << "*" << std::setw(30) << "Location: " << wallet.getLocation() << std::setw(20) << "Day: " << wallet.getDay() << std::setw(40) << "*\n";
     std::cout << "*************************************************************************************************\n";
     std::cout << "*" << std::setw(97) << "*\n";
