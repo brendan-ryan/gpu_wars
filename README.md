@@ -15,10 +15,15 @@ Reproduction of Classic DOS Game (console app)
 
 <hr />
 
-<h2>Known Bugs:
+<h2>Known Issues:
 <ul>
 <li>When purchasing RX 6800, <tt>display()</tt> function shows the same quantity added to RX 6900
-<li> 
+<li>Code is not DRY:
+<ul>
+<li>There are several functions that have repeated blocks of code with minor differences
+<li>These areas, such as `Buy` and `Sell` functions and message blocks for features like Random Events or Sufficient Funds checks, can be made smaller and more readable by reusing code blocks
+</ul>
+</ul>
 
 <style>
   h2 {
