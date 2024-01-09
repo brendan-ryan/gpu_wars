@@ -51,7 +51,7 @@ int Wallet::get6800Qty() {
     return card;
 }
 int Wallet::get6900Qty() {
-    int card = RX_6800_XT_qty;
+    int card = RX_6900_XT_qty;
     return card;
 }
 int Wallet::getCash() {
